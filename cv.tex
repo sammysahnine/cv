@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip} 	
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\usepackage{fontawesome5}
+
+
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Sammy Sahnine} \\[7.5pt]
+\href{https://github.com/sammysahnine}{\raisebox{-0.05\height}\faGithub\ sammysahnine} \ $|$ \ 
+\href{https://linkedin.com/in/sammysahnine}{\raisebox{-0.05\height}\faLinkedin\ sammysahnine} \ $|$ \ 
+\href{https://www.sammysahnine.com/hack}{\raisebox{-0.05\height}\faGlobe \ sammysahnine.com/hack} \ $|$ \ 
+\href{mailto:me@sammysahnine.com}{\raisebox{-0.05\height}\faEnvelope \ me@sammysahnine.com} \ 
+\end{tabularx}
+
+
+
+\section{Summary}
+Hello, I'm Sammy, a first year BSc Computer Science student at  \href{https://www.nottingham.ac.uk/computerscience/index.aspx}{The University of Nottingham}. Currently entering second year, specialising in Advanced Functional Programming, Image Processing and Robotics.
+
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Computer Science with Year in Industry BSc (Hons)} & \hfill 2023 - 2027 \\[3.75pt]
+\textit{The University of Nottingham} \\ \\
+\multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Year 1 Average of 81\%, First-Class Honours.
+        \item 95\% in Programming and Algorithms, involving low-level C programming.
+        \item 92\% and 91\% in Computer Fundamentals and Systems and Architecture respectively, involving ARM32 assembly code programming, networking, and servers.
+    \end{itemize}
+    \end{minipage}
+
+}  
+\end{tabularx}
+
+
+
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{SpotiPy Client} & \hfill \textit{Python, Spotify Web API} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+     A terminal based client for Spotify, built in Python. Using the SpotiPy library, utilising the Spotify Web API. Features include built in audio visualiser, the ability to view playlists and saved albums, and play/pause/skip controls. 
+}  \\ \\
+
+\textbf{Messagezoid} & \hfill \textit{Swift, Google Firebase, Git} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    An end-to-end encrypted messaging app written in Swift for iOS based devices. Utilises Google Firebase in order to host a NoSQL database to store required information such as user details - profile pictures, usernames, etc. This project was created for my A-Level in Computer Science.
+}  \\ \\
+
+\textbf{RemoteCheck} & \hfill \textit{Objective-C, Git} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    A minimal and lightweight OS X menu bar app that allows you to see CPU/GPU temperature, drive and network activity, and other system statistics of other Macs on your local network.
+}  \\
+\end{tabularx}
+
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages} &  \normalsize{C, Haskell, HTML/CSS, Java, Python, SQL (SQLite), Swift/SwiftUI}\\
+ 
+\textbf{Libraries} &  \normalsize{Matplotlib, NumPy, Matplotlib}\\
+
+\textbf{Operating Systems} &  \normalsize{iOS, Mac OS X 10.0 - macOS Sequoia (15), Ubuntu, Windows 98 - 11}\\
+
+\textbf{Developer Tools} &  \normalsize{Docker, Eclipse IDE, Git, GitHub, Google Firebase, IntelliJ IDEA, PyCharm, VS Code, Xcode}\\
+
+\end{tabularx} \\ \\ \\
+
+\center{\footnotesize Last updated: \today}
+\center{\footnotesize The latest version of this CV can be found at \href{https://www.sammysahnine.com/cv}{cv.sammysahnine.com}.}
+
+\end{document}
